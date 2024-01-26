@@ -1,20 +1,13 @@
 import streamlit as st
-import plotly.express as px
 import pandas as pd
-import pandas as pd
-import pandas.io.sql as sqlio
-import psycopg2 as ps
 import matplotlib.pyplot as plt
-import matplotlib.ticker as ticker
-import seaborn as sns
-import plotly.express as px
 import numpy as np
 from statsmodels.tsa.seasonal import seasonal_decompose
 from statsmodels.tsa.stattools import acf, pacf
 from statsmodels.tsa.stattools import adfuller
 from statsmodels.graphics.tsaplots import plot_acf, plot_pacf
 from statsforecast import StatsForecast
-from statsforecast.models import Naive, SeasonalNaive, SeasonalWindowAverage, AutoARIMA
+from statsforecast.models import Naive, SeasonalNaive, AutoARIMA
 
 import os
 import warnings
